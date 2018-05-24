@@ -1,0 +1,6 @@
+package ro.ase.acs.builder;
+
+public abstract class AbstractBuilder {
+
+	
+}

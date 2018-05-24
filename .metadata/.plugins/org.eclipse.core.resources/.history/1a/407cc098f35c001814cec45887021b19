@@ -1,0 +1,14 @@
+package ro.ase.acs.model;
+
+public class ContDebit extends ContBancar {
+
+	public ContDebit() {}
+
+	@Override
+	public String toString() {
+		return "ContDebit [getDenumire()=" + getDenumire() + ", getAdresa()=" + getAdresa() + ", getContor()="
+				+ getContor() + "]";
+	}
+	
+	
+}

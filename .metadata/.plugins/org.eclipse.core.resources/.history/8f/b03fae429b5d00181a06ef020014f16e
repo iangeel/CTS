@@ -1,0 +1,26 @@
+package ro.ase.acs.adapter;
+
+import ro.ase.acs.model.BankAccount;
+import ro.ase.acs.model.ContBancar;
+
+public class BankAccountOperationClassAdapter extends ContBancar implements BankAccount {
+
+	@Override
+	public void accountTransfer(BankAccount account, double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void transfer(ContBancar destinatie, double suma) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void depune(double suma) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

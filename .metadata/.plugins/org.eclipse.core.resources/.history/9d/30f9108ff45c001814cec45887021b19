@@ -1,0 +1,43 @@
+package ro.ase.acs.factory;
+
+import ro.ase.acs.model.ContBancar;
+import ro.ase.acs.model.ContCredit;
+import ro.ase.acs.model.ContDebit;
+
+public class BankManager {
+	
+	private static BankManager instance;
+	
+	private BankManager() {}
+	
+	public static BankManager getInstance() {
+		
+		if(instance == null) {
+			instance = new BankManager();
+		}
+		
+		return instance;
+	}
+	
+	public ContBancar generareCont(String tipCont) throws Exception {
+		ContBancar result = null;
+		
+		if(tipCont == null) {
+			throw new Exception("Type is null...");
+		}
+		
+		switch(tipCont) {
+		case "credit": 
+			result = new ContCredit();
+			break;
+		case "debit":
+			result = new ContDebit();
+			break;
+		default :
+			throw new Exception("Unknown document type...");
+		}
+		
+		return result;
+		
+	}
+}

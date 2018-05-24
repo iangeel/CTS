@@ -1,0 +1,40 @@
+package ro.ase.acs.builder;
+
+import ro.ase.acs.model.PersonalInformation;
+
+public class PersonailInformationBuilder implements AbstractPersonalInformationBuilder {
+
+	PersonalInformation personalInfo;
+	
+	public PersonailInformationBuilder(String firstName, String lastName) {
+		this.personalInfo = new PersonalInformation();
+		this.personalInfo.setFirstName(firstName);
+		this.personalInfo.setLastName(lastName);
+	}
+	
+	@Override
+	public void addCity(String city) {
+		this.personalInfo.setAddress(address);
+		
+	}
+
+	@Override
+	public void addStreet(String street) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addStreetNumber(Integer streetNo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public PersonalInformation getResult() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

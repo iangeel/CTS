@@ -1,0 +1,49 @@
+package ro.ase.acs.model;
+
+
+public class BankAccount {
+
+	
+	private final Integer id;
+	private PersonalInformation personalInformation;
+	private final String pid;
+	private double balance;
+	private double interestRate;
+
+	private BankAccount(Integer id, String pid) {
+		this.id = id;
+		this.pid = pid;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public double getInterestRate() {
+		return interestRate;
+	}
+
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public String getPid() {
+		return pid;
+	}
+
+	public PersonalInformation getPersonalInformation() {
+		return personalInformation;
+	}
+
+	public void setPersonalInformation(PersonalInformation personalInformation) {
+		this.personalInformation = personalInformation;
+	}
+}

@@ -1,0 +1,15 @@
+package ro.ase.acs.model;
+
+public abstract class ContBancar {
+	private int nrCont;
+
+	public int getNrCont() {
+		return nrCont;
+	}
+
+	public void setNrCont(int nrCont) {
+		this.nrCont = nrCont;
+	}
+	
+	
+}

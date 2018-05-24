@@ -1,0 +1,13 @@
+package ro.ase.acs.builder;
+
+import ro.ase.acs.model.PersonalInformation;
+
+public interface AbstractPersonalInformationBuilder {
+
+	public abstract void addFirstName();
+	public abstract void addLastName();
+	public abstract void addCity();
+	public abstract void addStreet();
+	public abstract void addStreetNumber();
+	public PersonalInformation getResult(); 
+}

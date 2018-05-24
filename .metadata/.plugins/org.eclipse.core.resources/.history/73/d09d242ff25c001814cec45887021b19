@@ -1,0 +1,14 @@
+package ro.ase.acs.model;
+
+public class ContCredit {
+
+	public ContCredit() {}
+
+	@Override
+	public String toString() {
+		return "ContCredit [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}	
+	
+	
+}

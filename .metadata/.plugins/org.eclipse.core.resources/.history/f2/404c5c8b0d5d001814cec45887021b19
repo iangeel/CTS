@@ -1,0 +1,19 @@
+package ro.ase.acs.main;
+
+import ro.ase.acs.model.CaracterFeminin;
+import ro.ase.acs.prototype.CaracterPrototype;
+
+public class Main {
+
+	public static void main(String[] args) {
+		try {
+			CaracterFeminin cf = (CaracterFeminin) CaracterPrototype.getSource("F");
+			System.out.println(cf);
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

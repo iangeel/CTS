@@ -1,0 +1,5 @@
+package ro.ase.acs.model;
+
+public class CaracterFeminin {
+
+}

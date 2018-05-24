@@ -1,0 +1,21 @@
+package ro.ase.acs.adapter;
+
+import ro.ase.acs.factory.BankManager;
+import ro.ase.acs.model.BankAccount;
+
+public class BankOperationObjectAdapter implements BankAccount {
+	
+	BankManager bankManager;
+	
+	public BankOperationObjectAdapter(BankManager bankManager) {
+		this.bankManager = bankManager;
+	}
+
+	@Override
+	public void accountTransfer(BankAccount account, double amount) {
+		System.out.println("Se transfera din contul curent...");
+		
+	}
+	
+	
+}

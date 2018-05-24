@@ -1,0 +1,20 @@
+package ro.ase.acs.decorator;
+
+import ro.ase.acs.model.IFactura;
+
+public abstract class AbstractDecoratorFactura implements IFactura{
+
+	private IFactura factura;
+	
+	public AbstractDecoratorFactura(IFactura factura) {
+		this.factura = factura;
+	}
+
+	@Override
+	public void printeazaFactura() {
+		factura.printeazaFactura();
+		
+	}
+	
+	
+}

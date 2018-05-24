@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/angel/CTSProjects/CTS2018-master"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/S12/CTSS12"/>
+		<item value="/home/angel/EclipseProjects/Sem6_JUnit"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/pregatire/CTSPregatire"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/materiale/CTSS04"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/materiale/CTSS01"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/materiale/AutomatCafea"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/S02/CTSS02"/>
+		<item value="/home/angel/CTSProjects/git-repo-dita/cts/S06/CTSS06"/>
+		<item value="/home/angel/CTSProjects/cts/S02/S02_extracted/CTSS02"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+</section>

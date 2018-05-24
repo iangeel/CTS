@@ -1,0 +1,99 @@
+package cts.pregatire;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import cts.exceptii.ExceptiiExercitii;
+
+public class Exercitii {
+
+	private Map<Integer, Student> csieStuds;
+	
+	public Exercitii(Map<Integer, Student> csieStuds) {
+		this.csieStuds = csieStuds;
+	}
+
+	// ex 1
+	public void adaugaMaterie(Integer id, Materie materie) throws ExceptiiExercitii {
+		if(id < 0 ) {
+			throw new ExceptiiExercitii("id must be positive!");
+		}
+		csieStuds.get(id).getMaterii().add(materie);
+	}
+
+	// ex 2
+	public void adaugaStudent(Student student) {
+		csieStuds.put(csieStuds.size(), student);
+	}
+
+	// ex 3
+	public Double calculeazaMediaByStudent(Integer id) {
+
+		Double suma = 0d;
+
+		for (Materie materie : this.csieStuds.get(id).getMaterii()) {
+			suma += materie.getNota();
+		}
+
+		return suma / this.csieStuds.get(id).getMaterii().size();
+	}
+
+	// ex 4
+	public Double calculeazaMediaFacultatii() {
+
+		Double suma = 0d;
+
+		for (Integer id : this.csieStuds.keySet()) {
+
+			suma += calculeazaMediaByStudent(id);
+		}
+
+		return suma / this.csieStuds.size();
+	}
+
+	// ex 5
+	public Student calculeazaCelMaiBunStudent() {
+
+		Integer idMax = 0;
+
+		for (Integer id : this.csieStuds.keySet()) {
+
+			if (calculeazaMediaByStudent(idMax) < calculeazaMediaByStudent(id)) {
+				idMax = id;
+			}
+		}
+
+		return this.csieStuds.get(idMax);
+	}
+
+	// ex 6
+	public List<Student> calculeazaRestantieri() {
+
+		List<Student> results = new ArrayList<Student>();
+
+		for (Integer id : this.csieStuds.keySet()) {
+			if (calculeazaMediaByStudent(id) < 5) {
+				results.add(this.csieStuds.get(id));
+			}
+		}
+
+		return results;
+	}
+	
+	// ex 7
+	public Double calculeazaMediaByMaterie(Materie materie){
+		// sa se implementeze si corpul metodei.
+		return 0d;
+	}
+
+	public Map<Integer, Student> getCsieStuds() {
+		return csieStuds;
+	}
+
+	public void setCsieStuds(Map<Integer, Student> csieStuds) {
+		this.csieStuds = csieStuds;
+	}
+	
+	
+}
